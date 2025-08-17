@@ -4,13 +4,10 @@
     {
         private static void Main(string[] args)
         {
-            string? input = Console.ReadLine();
+            float input = float.Parse(Console.ReadLine());
+            var (a, p, d) = MoyesGeometry.SquareAreaPerimeterDiagonal(input);
 
-            //int inputNumber = int.Parse(input);
-
-            int res = MoyesString.CharCount(input);
-
-            Console.WriteLine(res);
+            Console.WriteLine($"area: {a} perimeter: {p} diagonal: {d}");
         }
     }
 }
